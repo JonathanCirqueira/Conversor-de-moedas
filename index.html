@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Roboto:wght@100;300;700 & display=swap">
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Conversor de Moedas</title>
+    <link rel="icon" href="./assets/J-title.jpg">
+</head>
+
+<body id="body-color">
+    <div class="container">
+        <header class="cabeçalho" id="cabeçalho-color">
+            <h1 class="titulo">Conversor de Moedas</h1>
+        </header>
+
+        <main class="principal">
+            <label class="etiqueta">
+                Converter <b>de</b>
+                <select class="selecionar" >
+                    <option>
+                        R$ <b>Real brasileiro</b>
+                    </option>
+                </select>
+
+            </label>
+            <label class="etiqueta">
+                Converter <b>para</b>
+                <select class="selecionar" id="currench-select">
+                    <option>
+                        <b>US$ Dólar americano</b>
+                    </option>
+                    <option>
+                       <b>€ Euro</b>
+                    </option>
+                    <option>
+                        <b>Bitcoin</b>
+                     </option>
+                </select>
+            </label>
+            <label class="etiqueta">
+                Valor
+                <input id="input-reais" placeholder="R$10.000,00">
+            </label>
+            <button id="botao" type="button">Converter</button>
+            <section class="container2" id="container-2">
+                <div class="caixa1">
+                    <img src="./assets/brasil 2.png" alt="imagem-do-brasil">
+                    <p class="paragrafo">Real</p>
+                    <p class="S-paragrafo" id="real-value-text">R$ <b>10.000,00</b></p>
+                </div>
+                <div class="seta2">
+                    <img class="seta" src="./assets/seta-2.png" alt="seta-para-baixo">
+                </div>
+
+                <div class="caixa1">
+                    <img src="./assets/estados-unidos (1) 1.png" alt="imagem-do-estados-unidos" id="currench-img">
+                    <p class="paragrafo" id="currench-name">Dólar Americano</p>
+                    <p class="S-paragrafo" id="dolar-value-text">US$ 2.000,00</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+<script src="./scripts.js"></script>
+
+</html>
