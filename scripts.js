@@ -2,20 +2,31 @@
 
 const button = document.getElementById('botao')
 const select = document.getElementById('currench-select')
-const dolar = 5.17
+const dolar =5.17
 const euro = 5.8
 const bitcoin = 105214.22
+
+
+
+
 const convertValues = () => {
-    const inputReias = document.getElementById('input-reais').value
+    const inputReais = document.getElementById('input-value').value
     const realValueText = document.getElementById('real-value-text')
     const dolarValueText = document.getElementById('dolar-value-text')
+
+
+    
+    
+    
+  
+
 
 
     realValueText.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
         currency: "BRL",
 
-    }).format(inputReias)
+    }).format(inputReais)
 
 
     if (select.value === "Bitcoin") {
@@ -26,7 +37,7 @@ const convertValues = () => {
 
 
 
-        }).format(inputReias / bitcoin)
+        }).format(inputReais / bitcoin)
 
     }
 
@@ -35,7 +46,7 @@ const convertValues = () => {
             style: "currency",
             currency: "URL",
 
-        }).format(inputReias / dolar)
+        }).format(inputReais / dolar)
     }
 
     if (select.value === "€ Euro") {
@@ -43,7 +54,7 @@ const convertValues = () => {
             style: "currency",
             currency: "EUR",
 
-        }).format(inputReias / euro)
+        }).format(inputReais / euro)
     }
 
 }
@@ -95,3 +106,4 @@ changeCurrench = () => {
 button.addEventListener('click', convertValues)
 
 select.addEventListener('change', changeCurrench)
+
